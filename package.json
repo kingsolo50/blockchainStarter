@@ -1,0 +1,26 @@
+{
+  "name": "exampleOne",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon ./blockchain/index-test.js",
+    "start": "nodemon server.js",
+    "git": "git push origin master"
+  },
+  "github": "https://github.com/kingsolo50/blockchainStarter.git",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "get-port": "^5.1.1",
+    "moment": "^2.25.3",
+    "mongoose": "^5.9.13",
+    "ws": "^7.3.0"
+  }
+}
