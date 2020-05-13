@@ -4,11 +4,11 @@
 
 const   router = require("express").Router(),        
         Blockchain = require('../blockchain/index'),
-        bc = new Blockchain();
-        // P2pServer = require('../app/p2p-server'),
-        // p2pServer = new P2pServer(bc);
+        P2pServer = require('../p2pServer'),
+        bc = new Blockchain(),
+        p2pServer = new P2pServer(bc);
  
-        //
+        // 
         router.get('/', (req, res, next) => {
             res.json({
                 success: true,
@@ -33,7 +33,7 @@ const   router = require("express").Router(),
 
         });
         
-        // p2pServer.listen();
+        p2pServer.listen();
 
 
 module.exports = router;
