@@ -19,4 +19,4 @@ const   express = require('express'),
 
         app.use('/api', block);
  
-        app.listen(HTTP_PORT, () => console.log(`HTTP_PORT listening on: ${HTTP_PORT}`))
+        app.listen(HTTP_PORT, () => console.log(`HTTP_PORT server.js listening on: ${HTTP_PORT}`))
